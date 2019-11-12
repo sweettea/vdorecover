@@ -7,9 +7,9 @@ _waitForRMFiles(){
   ANS='n'
   while [[ $ANS != y ]] ;do
           echo " "
-          echo "Remove few files from  $MOUNT_POINT"
+          echo "Please manually remove some files from the VDO volume, currently mounted at $MOUNT_POINT"
           echo " "
-          echo -n "Proceed? [y/n]: "
+          echo -n "Enter 'y' when files have been removed [y/n]: "
           read -n 1 ANS
   done
 }
